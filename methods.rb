@@ -4,7 +4,7 @@ def read_text(file)
   File.open(file).each do |line| 
     puts line
   end 
-
+exit(0)
 end 
 
 def list_items(arr)

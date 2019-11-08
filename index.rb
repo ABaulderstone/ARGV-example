@@ -5,8 +5,10 @@ flag, *arr = ARGV
 case flag 
 when "-help"
   read_text("./help.txt")
+  exit(0)
 when "-h"
   read_text("./help.txt")
+  exit(0)
 when "-food"
   puts "Time to eat" 
   list_items(arr)
@@ -15,5 +17,7 @@ when "-drink"
 else
   puts "Invalid argument"
 end
+
+puts "Some text that runs no matter what"
 
 
